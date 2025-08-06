@@ -1,0 +1,68 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+
+# === Gradle ===
+.gradle/
+# === IntelliJ IDEA ===
+.idea/
+# === macOS ===
+.DS_Store
+
+# === Logs ===
+*.log
+
+# === H2 DB 파일 (만약 향후 file-based h2 사용 시) ===
+*.mv.db
+*.h2.db
+
+# === Application Settings ===
+!src/main/resources/
+src/main/resources/application-*.yml
+src/main/resources/application-*.properties
+
+# === Lombok ===
+*.lombok
+
+# === Test Reports ===
+test-output/
