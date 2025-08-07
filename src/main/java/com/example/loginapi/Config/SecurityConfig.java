@@ -1,4 +1,4 @@
-package com.example.loginapi.config;
+package com.example.loginapi.Config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
