@@ -6,7 +6,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,5 +19,10 @@ public class GlobalExceptionHandler {
             .map(FieldError::getDefaultMessage)
             .collect(Collectors.toList());
     return ResponseEntity.badRequest().body(errors);
+    }
+
+    @ExceptionHandler(NoWordException.class)
+    public ResponseEntity<String> handleNoWordExceptions(NoWordException e) {
+        return ResponseEntity.badRequest().body(e.getMessage());
     }
 }
